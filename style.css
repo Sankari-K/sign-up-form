@@ -48,7 +48,7 @@ body {
 .credits {
     display: flex;
     position: absolute;
-    bottom: 3vh;
+    bottom: calc(15px + 3vh);
     width: 100%;
     color: var(--credit-color);
     justify-content: center;
