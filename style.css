@@ -114,9 +114,22 @@ label {
 .inputs > div > input {
     width: 270px;
     height: 25px;
-
+    border-radius: 7px;
+    border-color: #E5E7EB;
+    border-style:ridge;
 }
 
+.inputs > div > input:focus {
+    outline: none !important;
+    border:1px solid blue;
+    box-shadow: 0 0 5px #719ECE;
+}
+
+.inputs > div > input.error:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 5px #FF7F7F;
+}
 button {
     font-weight: 600;
     font-size: 16px;
@@ -126,7 +139,7 @@ button {
     color: white;
     border-radius: 8px;
     margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
 }
 
 hr {
@@ -159,10 +172,14 @@ hr {
     }
     .footer div {
         margin-left: 0.5vw;
-        font-size: calc(10px + 0.5vw);
+        font-size: calc(12px + 0.5vw);
     }
     .footer div > span {
-        font-size: calc(10px + 0.5vw);
+        font-size: calc(12px + 0.5vw);
     }
 }
 
+.user-error {
+    color: red;
+    font-size: 10px;
+}
