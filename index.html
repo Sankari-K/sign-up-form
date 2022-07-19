@@ -28,7 +28,7 @@
         </div>
         <div class="form">
             <span>Let's do this!</span>
-            <form action="http://httpbin.org/post" method="post">
+            <form name="form" action="http://www.example.com" method="post"> 
                 <div class="inputs">
                     <div>
                         <label for="first-name">FIRST NAME</label>
@@ -48,17 +48,17 @@
                     </div>
                     <div>
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" id="pwd" placeholder="" required class="error">
-                        <span class="user-error">*Passwords do not match</span>
+                        <input type="password" id="pwd" minlength="5" required class="error">
+                        <span class="user-error"></span>
                     </div>
                     <div>
                         <label for="c-pwd">CONFIRM PASSWORD</label>
-                        <input type="password" id="c-pwd" placeholder="" required class="error">
+                        <input type="password" id="c-pwd"  minlength="5"  required class="error">
                     </div>
                 </div>
                 <hr>
                 <div class="footer">
-                    <button type="submit">Create Account</button>
+                    <button type="submit" onClick=" return checkform()">Create Account</button>
                     <div>
                         Already have an account? <span> Log in</span>
                     </div>
@@ -66,5 +66,6 @@
             </form>
         </div>
     </div>
+    <script src="script.js"></script> 
 </body>
 </html>
